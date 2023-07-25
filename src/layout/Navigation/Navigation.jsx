@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "./Navigation.scss";
+import logo from "../../assets/logo.png";
 export const Navigation = ({ page }) => {
   const links = [
     {
@@ -21,6 +22,10 @@ export const Navigation = ({ page }) => {
   };
   return (
     <div className="nav">
+      <div className="nav__site-logo">
+        <img src={logo} className="nav__image" />
+        <h1 className="nav__title">coinWatch</h1>
+      </div>
       <ul className="nav__list">
         {links.map((link) => {
           return (

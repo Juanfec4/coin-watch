@@ -1,10 +1,26 @@
-@use "../../sass//colors" as *;
+@use "../../sass/colors" as *;
 @use "../../sass/global" as *;
 .nav {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: $clr-raisin-black;
+  background-color: $clr-dark-banner-black;
+  &__site-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: $margin-sm;
+    margin-top: $margin-sm;
+  }
+  &__title {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+  &__image {
+    width: calc($coin-radius-sm * 1.4);
+    height: calc($coin-radius-sm * 1.4);
+  }
   &__list {
     list-style: none;
     margin: 0;
