@@ -1,0 +1,24 @@
+@use "../../sass/global" as *;
+@use "../../sass/colors" as *;
+.table {
+  width: calc(100vw - $margin-sm * 2);
+  margin: 0 $margin-sm $margin-sm;
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: $border-radius-sm;
+
+  &__body {
+    background-color: $clr-raisin-black;
+    padding: $padding-sm;
+  }
+  &__row-content {
+    background-color: $clr-raisin-black;
+    text-align: center;
+  }
+  &__row-category {
+    background-color: $clr-raisin-black;
+    padding: $padding-sm;
+    font-weight: 600;
+  }
+}

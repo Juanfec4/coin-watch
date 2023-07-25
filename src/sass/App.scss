@@ -1,0 +1,8 @@
+@use "./typography" as *;
+
+body {
+  background-color: #1c1b1e;
+  color: #fff;
+  font-family: $font-source-sans;
+  margin: 0;
+}

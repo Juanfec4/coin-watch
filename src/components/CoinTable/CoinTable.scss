@@ -1,0 +1,56 @@
+@use "../../sass/colors" as *;
+@use "../../sass/global" as *;
+
+.table {
+  width: calc(100vw - $margin-sm * 2);
+  margin: 0 $margin-sm $margin-sm;
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow: hidden;
+  padding: $padding-sm;
+  background-color: $clr-dark-raisin-black;
+  &__headings-row-data {
+    text-align: center;
+  }
+  &__row {
+    padding: $padding-sm;
+    background-color: $clr-dark-raisin-black;
+    &:hover {
+      background-color: $clr-raisin-black;
+      cursor: pointer;
+    }
+  }
+  &__row-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: $padding-sm 0;
+    border: none;
+  }
+  &__row-text {
+    text-align: center;
+    &--title {
+      @extend .table__row-text;
+      font-size: 1rem;
+      margin: 0;
+    }
+    p {
+      margin: 0;
+      &.neutral {
+        @extend .table__row-text;
+        color: $clr-gold;
+        font-size: 0.9rem;
+      }
+      &.positive {
+        @extend .table__row-text;
+        color: $clr-dark-pastel-green;
+        font-size: 0.9rem;
+      }
+      &.negative {
+        @extend .table__row-text;
+        color: $clr-dark-permanent-geranium-lake;
+        font-size: 0.9rem;
+      }
+    }
+  }
+}

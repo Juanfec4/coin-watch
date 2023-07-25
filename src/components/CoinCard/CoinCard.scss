@@ -1,0 +1,83 @@
+@use "../../sass/global" as *;
+@use "../../sass/colors" as *;
+.coin {
+  display: flex;
+  flex-direction: column;
+  &__details {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+  }
+  &__image-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__image {
+    width: $coin-radius-sm;
+    height: $coin-radius-sm;
+  }
+  &__information {
+    display: flex;
+    flex-direction: column;
+  }
+  &__information-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: $clr-raisin-black;
+    margin: $margin-sm;
+    padding: $padding-sm;
+    border-radius: $border-radius-sm;
+    gap: $padding-sm;
+    width: 60%;
+    max-height: $coin-radius-sm;
+  }
+  &__price-container {
+    @extend .coin__information-container;
+    gap: 0;
+    flex-direction: column;
+    justify-content: center;
+    width: 40%;
+  }
+  &__information-heading {
+    margin: 0;
+  }
+  &__information-subheading {
+    margin: 0;
+    opacity: 0.5;
+    &--positive {
+      @extend .coin__information-subheading;
+      color: $clr-dark-pastel-green;
+      opacity: 1;
+    }
+    &--negative {
+      @extend .coin__information-subheading;
+      color: $clr-dark-permanent-geranium-lake;
+      opacity: 1;
+    }
+    &--neutral {
+      @extend .coin__information-subheading;
+      color: $clr-gold;
+      opacity: 1;
+    }
+  }
+  &__chart-title {
+    margin: 0;
+    text-align: center;
+  }
+  &__chart-frame {
+    min-width: calc(100vw - $margin-sm * 2);
+    margin: auto $margin-sm;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    canvas {
+      min-width: calc(100vw - $margin-sm * 2);
+      min-height: calc(50vw - $margin-sm * 2);
+      overflow: hidden;
+      border-radius: $border-radius-sm;
+    }
+  }
+}

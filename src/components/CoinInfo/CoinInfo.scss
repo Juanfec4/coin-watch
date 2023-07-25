@@ -1,0 +1,14 @@
+@use "../../sass/global" as *;
+@use "../../sass/global" as *;
+.info-heading {
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+}
+.info-container {
+  width: calc(100vw - $margin-sm * 2);
+  margin: $margin-sm auto;
+  a {
+    color: gray;
+  }
+}
