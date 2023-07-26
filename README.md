@@ -18,3 +18,27 @@ Since both APIs used for the project are on free plans, there might be scenaros 
 https://coin-watch-r10bn6i04-juanfec4.vercel.app/
 
 ## Screenshots
+
+#### Displays a list of crypto currencies (default state).
+
+<img src="readme/dashboard.png" width="500" aspect-ratio="16/9"/>
+
+#### Filters and search params.
+
+<img src="readme/search.png" width="500" aspect-ratio="16/9"/>
+
+#### Currency page (using chart.js).
+
+<img src="readme/info-page.png" width="500" aspect-ratio="16/9"/>
+
+#### Dynamic description powered by CoinGecko API.
+
+<img src="readme/description.png" width="500" aspect-ratio="16/9"/>
+
+#### Latest news page.
+
+<img src="readme/news.png" width="500" aspect-ratio="16/9"/>
+
+#### Fully responsive pages.
+
+<img src="readme/news-responsive.png" width="500" aspect-ratio="16/9"/>
