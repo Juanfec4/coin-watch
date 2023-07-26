@@ -48,3 +48,23 @@ Throughout this project I faced several challenges. The first version I made I t
 #### Fully responsive pages.
 
 <img src="readme/news-responsive.png" width="500" aspect-ratio="16/9"/>
+
+## GEEK STUFF (CS50)
+
+This project utilizes react as a front-end library, meaning components are dynamically added to the page. Components are created based on data fetched from external resources via their API. To make things simpler, I used Axios to make API calls. These are contained within the services folder. The calls are only made occasionally to avoid reaching the API call limits provided by free plans. The data is stored using React-redux, which is a state management library that lets us create a store with different actions within that each dispatch a change to the store's state (aka. value). The components are subscribed to those changes and also get methods to update the state in the event that a loading, filter, or search takes place. The other key aspect of the project was using React router to create different pages depending on what the user clicks. This was especially useful when making each coin page, as the basic structure was the same, but the information could dynamically change, the route had to also change.
+
+Why React?
+
+I wanted to use a framework that could make the programming experience more modular and effective. React was a simple-to-grasp concept once I learned enough JavaScript.
+
+Why Redux?
+
+To be honest, I wanted to challenge myself, there are more straightforward state management techniques, but I really wanted to learn a new technology.
+
+Why Sass and not CSS?
+
+I like to use BEM to create reusable CSS; this is best paired with Scss (Sass), because I can nest items and follow the flow of the HTML document (JSX).
+
+What could I improve?
+
+I definitely could add more functionalities to the project. The idea is to evolve the project as I learn more, and I could even add my own REST API to store user authentication and watch-list coins that each user picks. I plan to use and modify this project as I progress through my coding journey.
