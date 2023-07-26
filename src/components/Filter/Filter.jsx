@@ -51,9 +51,11 @@ const Filter = () => {
           <option value="nameAZ">Name A-Z</option>
           <option value="nameZA">Name Z-A</option>
           <option value="priceAsc">Price Asc.</option>
-          <option value="priceDesc">Price Dec.</option>
+          <option value="priceDesc">Price Desc.</option>
           <option value="marketCapAsc">Market Cap. Asc.</option>
-          <option value="marketCapDesc">Market Cap. Desc.</option>
+          <option value="marketCapDesc" selected="selected">
+            Market Cap. Desc.
+          </option>
         </select>
       </div>
     </div>

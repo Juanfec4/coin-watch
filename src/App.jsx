@@ -1,6 +1,7 @@
 import { CoinPage } from "./routes/CoinPage";
 import { Routes, Route } from "react-router-dom";
 import { CoinList } from "./routes/CoinList";
+import { NewsPage } from "./routes/NewsPage";
 import "./sass/App.scss";
 function App() {
   return (
@@ -8,6 +9,7 @@ function App() {
       <Routes>
         <Route path="/" element={<CoinList />} />
         <Route path="coin/:id" element={<CoinPage />} />
+        <Route path="news" element={<NewsPage />} />
       </Routes>
     </div>
   );

@@ -12,10 +12,13 @@
     justify-content: center;
     gap: $margin-sm;
     margin-top: $margin-sm;
+    text-decoration: none;
+    list-style: none;
   }
   &__title {
     font-size: 1.5rem;
     margin: 0;
+    color: $clr-white;
   }
   &__image {
     width: calc($coin-radius-sm * 1.4);
@@ -31,20 +34,25 @@
     width: 100vw;
   }
   &__list-item {
-    padding: $padding-sm;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    margin-bottom: 2px;
     &--active {
       @extend .nav__list-item;
       margin-bottom: -2px;
       border-bottom: 2px solid $clr-white;
       cursor: pointer;
+      font-weight: 600;
     }
     &:hover {
       @extend .nav__list-item--active;
+    }
+    a {
+      width: 100%;
+      height: 100%;
+      padding: $padding-sm;
+      margin-bottom: 2px;
     }
   }
   &__link {

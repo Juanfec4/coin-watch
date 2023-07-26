@@ -4,6 +4,7 @@ import { CoinInfo } from "../components/CoinInfo/CoinInfo";
 import { CoinCard } from "../components/CoinCard/CoinCard";
 import { CoinDetails } from "../components/CoinDetails/CoinDetails";
 import { Navigation } from "../layout/Navigation/Navigation";
+import { Attribution } from "../components/Attribution/Attribution";
 import infoService from "../services/Info";
 import "../sass/pages/CoinPage.scss";
 
@@ -65,6 +66,13 @@ export const CoinPage = () => {
       )}
       <CoinDetails coin={coin.details} />
       <CoinInfo description={description} />
+      <Attribution
+        source={{
+          name: "Coin Gecko",
+          url: "https://www.coingecko.com/en/api/documentation",
+          img: "https://www.coingecko.com/favicon.ico",
+        }}
+      />
     </div>
   );
 };

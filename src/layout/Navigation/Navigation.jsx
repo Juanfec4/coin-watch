@@ -22,10 +22,10 @@ export const Navigation = ({ page }) => {
   };
   return (
     <div className="nav">
-      <div className="nav__site-logo">
+      <Link to={"/"} className="nav__site-logo">
         <img src={logo} className="nav__image" />
         <h1 className="nav__title">coinWatch</h1>
-      </div>
+      </Link>
       <ul className="nav__list">
         {links.map((link) => {
           return (

@@ -1,0 +1,19 @@
+@use "../../sass/colors" as *;
+@use "../../sass/global" as *;
+@use "../../sass/responsive" as *;
+
+.feed-container {
+  max-width: 500px;
+  margin: 0 auto;
+  @include md {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 100%;
+    padding: $padding-sm;
+  }
+  @include lg {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 1500px;
+  }
+}

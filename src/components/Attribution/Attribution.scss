@@ -1,0 +1,21 @@
+@use "../../sass/colors" as *;
+@use "../../sass/global" as *;
+@use "../../sass/responsive" as *;
+
+.attribution {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: $margin-sm;
+  &__text {
+    margin: $margin-sm;
+  }
+  &__link {
+    color: $clr-white;
+  }
+  &__image {
+    margin-right: calc($margin-sm/4);
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+}

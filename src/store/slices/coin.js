@@ -1,8 +1,7 @@
 import { createSlice, createAsyncThunk } from "@reduxjs/toolkit";
 import axios from "axios";
 
-const API_URL =
-  "https://api.coingecko.com/api/v3/coins/markets?vs_currency=usd&order=market_cap_desc&per_page=50&page=1&sparkline=true&locale=en";
+const API_URL = "https://api.coingecko.com/api/v3/coins/markets";
 
 const initialState = {
   loading: false,
@@ -10,9 +9,19 @@ const initialState = {
   error: "",
 };
 
+const config = {
+  params: {
+    vs_currency: "usd",
+    order: "market_cap_desc",
+    per_page: 50,
+    page: 1,
+    sparkline: true,
+    locale: "en",
+  },
+};
 //Fetch the coins from the API
 export const fetchCoins = createAsyncThunk("coin/fetchCoins", () => {
-  return axios.get("../../db.json").then((response) => {
+  return axios.get(API_URL, config).then((response) => {
     return response.data;
   });
 });
