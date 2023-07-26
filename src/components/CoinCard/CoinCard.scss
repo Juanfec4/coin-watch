@@ -1,5 +1,6 @@
 @use "../../sass/global" as *;
 @use "../../sass/colors" as *;
+@use "../../sass//responsive" as *;
 .coin {
   display: flex;
   flex-direction: column;
@@ -7,7 +8,11 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100vw;
+    width: 100%;
+    @include lg {
+      align-self: center;
+      width: 60%;
+    }
   }
   &__image-container {
     display: flex;
@@ -68,16 +73,27 @@
     text-align: center;
   }
   &__chart-frame {
-    min-width: calc(100vw - $margin-sm * 2);
+    min-width: calc(100% - $margin-sm * 2);
+    height: 20vh;
     margin: auto $margin-sm;
     display: flex;
     align-items: center;
     justify-content: center;
+    @include md {
+      height: 40vh;
+      min-height: 50%;
+    }
+    @include lg {
+      min-height: 10%;
+      height: 50vh;
+    }
     canvas {
-      min-width: calc(100vw - $margin-sm * 2);
-      min-height: calc(50vw - $margin-sm * 2);
+      width: calc(100% - $margin-sm * 2);
       overflow: hidden;
       border-radius: $border-radius-sm;
+      @include lg {
+        max-width: 60%;
+      }
     }
   }
 }

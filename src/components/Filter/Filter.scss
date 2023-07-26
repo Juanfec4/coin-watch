@@ -1,0 +1,46 @@
+@use "../../sass/global" as *;
+@use "../../sass//typography" as *;
+@use "../../sass/responsive" as *;
+
+.filter {
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @include md {
+    flex-direction: row;
+  }
+  &__container {
+    display: flex;
+    align-items: center;
+    width: 20rem;
+  }
+  &__label {
+    margin-right: $margin-sm;
+  }
+  &__search {
+    margin: $margin-sm;
+    padding-left: $padding-sm;
+    width: 20rem;
+    height: 1.5rem;
+    border-radius: calc($border-radius-sm * 2);
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    font-family: $font-source-sans;
+    font-weight: bold;
+    box-sizing: border-box;
+  }
+  &__select {
+    font-family: $font-source-sans;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    height: 1.5rem;
+    border-radius: calc($border-radius-sm * 2);
+    outline: none;
+    border: none;
+  }
+}

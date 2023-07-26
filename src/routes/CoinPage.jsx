@@ -4,7 +4,7 @@ import { CoinInfo } from "../components/CoinInfo/CoinInfo";
 import { CoinCard } from "../components/CoinCard/CoinCard";
 import { CoinDetails } from "../components/CoinDetails/CoinDetails";
 import { Navigation } from "../layout/Navigation/Navigation";
-import infoService from "../services/InfoService";
+import infoService from "../services/Info";
 import "../sass/pages/CoinPage.scss";
 
 export const CoinPage = () => {

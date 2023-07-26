@@ -34,6 +34,7 @@ export const CoinChart = ({ coinData, coinTrend }) => {
 
   const options = {
     responsive: true,
+    maintainAspectRatio: false,
     plugins: {
       //Hide legend
       legend: {

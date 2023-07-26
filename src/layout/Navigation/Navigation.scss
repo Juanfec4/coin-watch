@@ -36,9 +36,15 @@
     align-items: center;
     justify-content: center;
     width: 100%;
+    margin-bottom: 2px;
     &--active {
       @extend .nav__list-item;
+      margin-bottom: -2px;
       border-bottom: 2px solid $clr-white;
+      cursor: pointer;
+    }
+    &:hover {
+      @extend .nav__list-item--active;
     }
   }
   &__link {

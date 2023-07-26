@@ -6,7 +6,7 @@ function App() {
   return (
     <div>
       <Routes>
-        <Route path="/coins" element={<CoinList />} />
+        <Route path="/" element={<CoinList />} />
         <Route path="coin/:id" element={<CoinPage />} />
       </Routes>
     </div>

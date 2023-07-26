@@ -2,7 +2,7 @@
 @use "../../sass/global" as *;
 
 .table {
-  width: calc(100vw - $margin-sm * 2);
+  width: calc(100% - $margin-sm * 2);
   margin: 0 $margin-sm $margin-sm;
   table-layout: fixed;
   border-collapse: collapse;

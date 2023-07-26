@@ -5,7 +5,7 @@ export const Navigation = ({ page }) => {
   const links = [
     {
       name: "coins",
-      to: "/coins",
+      to: "/",
       text: "Coin List",
     },
     {
