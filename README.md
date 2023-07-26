@@ -17,6 +17,12 @@ Since both APIs used for the project are on free plans, there might be scenaros 
 
 https://coin-watch-r10bn6i04-juanfec4.vercel.app/
 
+## Design choices
+
+Throughout this project I faced several challenges. The first version I made I tried to use the context API from react. However that did not work well when trying to update states from child components. So I decided to split the states from my components, and thus I utilized React-redux, which allowed me to create a store to act as a 'database' that could be updated via actions. The components were then subscribed to the values from the store enabling a simple flow of information from a central point to the rest of the application once fetched.
+
+#### Video Demo: https://www.youtube.com/watch?v=gYJKWHD1tp0
+
 ## Screenshots
 
 #### Displays a list of crypto currencies (default state).
